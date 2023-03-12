@@ -19,7 +19,7 @@ class Controller {
     public function Run($sql){
         // Create connection
         $conn = new \mysqli($this->servername, $this->username, $this->password, $this->dbname);
-    
+        mysqli_query($conn, "SET NAMES 'utf8'");
         // Check connection
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);

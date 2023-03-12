@@ -966,7 +966,8 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 980px) {
-
+            /* Logo */
+            
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -1936,28 +1937,21 @@ input, select, textarea {
 	#logo {
 		display: inline-block;
 	}
-
 		#logo h1 {
-			background: #e4000f;
-			color: #fff;
-			border-radius: 6px;
-			font-family: 'Oleo Script', serif;
-			font-weight: 400;
-			padding: 0.25em 0.2em 0.25em 0.2em;
-			font-size: 3.25em;
-			letter-spacing: 0.05em;
-			display: inline-block;
-			vertical-align: middle;
-		}
-
-		#logo span {
 			font-weight: 800;
 			line-height: 4.5em;
 			letter-spacing: 0.025em;
 			font-size: 0.9em;
 			vertical-align: middle;
-			margin: 0 0 0 1.25em;
+			margin: 0 0 0 11em;
 		}
+
+        #logo img{
+            width: 8em;
+            top: -2em;
+            position: absolute;
+            left: 1em;
+        }
 
 /* Nav */
 
@@ -2166,6 +2160,15 @@ input, select, textarea {
 
 	@media screen and (max-width: 980px) {
 
+        #logo img{
+            position: inherit;
+            left: 6em;
+        }
+        
+        #logo h1 {
+            line-height: 3em;
+            margin: 0 0 0 1.35em;
+        }
 		/* Basic */
 
 			html, body {
@@ -2629,16 +2632,6 @@ input, select, textarea {
 				padding: 40px 30px 40px 30px;
 			}
 
-		/* Logo */
-
-			#logo h1 {
-				font-size: 2.75em;
-				padding: 0.2em 0.275em;
-			}
-
-			#logo span {
-				line-height: 3em;
-			}
 
 		/* Banner */
 
